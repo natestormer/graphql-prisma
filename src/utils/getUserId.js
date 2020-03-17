@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken"
 
-const AUTH_SECRET = "thisisasecret"
+const AUTH_SECRET = process.env.AUTH_SECRET
 
 const getUserId = (request, requireAuth = true) => {
   const header = request.request
